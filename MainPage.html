@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" type="text/css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/custom.css" type="text/css">
+    <style>
+        body{
+            font-family: "Nunito Sans";
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <div class="d-flex justify-content-between align-middle align-items-start border border-end-0 pt-3 " style="min-height: 4rem">
+        <div class="h4 ps-5 text-left"><b>Where in the world?</b></div>
+        <div class="d-flex flex-row mb-3 align-items-center">
+            <img class="search-icon img-fluid  " src="icons/moon-outline.svg" alt="search">
+            <div class="col me-4 text-left "><b>Dark Mode</b></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container-fluid">
+        <div class="row row-cols-auto gy-2 justify-content-between mt-5 align-items-center mx-0">
+            <div class="d-flex gap-4 bg-white ms-4 ps-3 search-div align-items-center h-100  ">
+                <img class="search-icon img-fluid mt-1 ms-2" src="icons/search-outline.svg" alt="search">
+                <span class="search ">Search for a country...</span>
+            </div>
+            <div class="dropdown pe-4 ">
+                <button class="btn btn-secondary dropdown-toggle bg-white text-black border-white ps-2 w-100 me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter by Region
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Africa</a></li>
+                    <li><a class="dropdown-item" href="#">America</a></li>
+                    <li><a class="dropdown-item" href="#">Asia</a></li>
+                    <li><a class="dropdown-item" href="#">Europe</a></li>
+                    <li><a class="dropdown-item" href="#">Oceania</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid text-left d-flex justify-content-center-sm ">
+        <div class="row row-cols-auto no-pad   ">
+            <div class="col-md-3" >
+                <div class="card" >
+                    <img src="flags/de.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4"><b>Germany</b></h5>
+                        <div class="card-text"><b>Population</b>: 81,770,900</div>
+                        <div class="card-text"><b>Region</b>: Europe</div>
+                        <div class="card-text"><b>Capital</b>: Berlin</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <img src="flags/us.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>United States of America</b></h5>
+                        <div class="card-text"><b>Population:</b> 323,947,000 </div>
+                        <div class="card-text"><b>Region:</b> Americas </div>
+                        <div class="card-text"><b>Capital:</b> Washington, D.C.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="flags/br.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Brazil</b></h5>
+                        <div class="card-text"><b>Population: </b>206,135,893</div>
+                        <div class="card-text"><b>Region: </b>Americas </div>
+                        <div class="card-text"><b>Capital: </b>brasilia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="flags/is.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Iceland</b></h5>
+                        <div class="card-text"><b>Population:</b> 334,300 </div>
+                        <div class="card-text"><b>Region:</b> Europe </div>
+                        <div class="card-text"><b>Capital:</b> Reykjavík</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="flags/af.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Afghanistan</b></h5>
+                        <div class="card-text"><b>Population: </b>27,657,145</div>
+                        <div class="card-text"><b>Region: </b>Asia</div>
+                        <div class="card-text"><b>Capital: </b>Kabul</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <img src="flags/ax.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                            <h5 class="card-title"><b>Afghanistan</b></h5>
+                            <div class="card-text"><b>Population: </b>81,770,900</div>
+                            <div class="card-text"><b>Region: </b>Europe</div>
+                            <div class="card-text"><b>Capital: </b>Berlin</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <img src="flags/al.svg" class="card-img-top object-fit-cover"  alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Albania</b></h5>
+                        <div class="card-text"><b>Population: </b>2,886,026</div>
+                        <div class="card-text"><b>Region: </b>Europe</div>
+                        <div class="card-text"><b>Capital: </b>Tirana</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <img src="flags/dz.svg" class="card-img-top object-fit-cover" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Algeria</b></h5>
+                        <div class="card-text"><b>Population: </b>40,400,000</div>
+                        <div class="card-text"><b>Region: </b>Africa</div>
+                        <div class="card-text"><b>Capital: </b>Algiers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
